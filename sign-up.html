@@ -5,46 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>sign up</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../my.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style/my.css" />
   </head>
   <body>
     <DIV>
+        <nav class="navbar bg-danger fixed-top">
+            <span class="h1 mb-0">WEB MAKER</span>
+          </nav>
        <div class="container" >
-        <h1>SIGN-UP</h1>
+        <h3>SIGN-UP</h3>
         <div>            
-            <input type="text" class="form-control" placeholder="FIRST NAME" />
+            <input type="text" class="form-control" id="FirstName" placeholder="FIRST NAME" />
             <br>
-            <input type="text" class="form-control" placeholder="LAST NAME" />
+            <input type="text" class="form-control" id="LastName" placeholder="LAST NAME" />
             <br>
-            <input type="text" class="form-control" placeholder="DATE OF BIRTH" />
+            <input type="text" class="form-control" id="Birthday" placeholder="DATE OF BIRTH" />
             <br>
-            <input type="text" class="form-control" placeholder="USER NAME" />
+            <input type="text" class="form-control" id="Username" placeholder="USERNAME" />
             <br>
-            <input type="email" class="form-control" placeholder="EMAIL" />
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" />
             <br>
-            <input type="email" class="form-control" placeholder="CONFIRM EMAIL" />
+            <input type="email" class="form-control" id="email2" placeholder="CONFIRM EMAIL" />
             <br>
-            <input type="password" class="form-control" placeholder="CREATE PASSWORD" />
+            <input type="password" class="form-control" id="password" placeholder="CREATE PASSWORD" />
             <br>
-            <input type="password" class="form-control" placeholder="CONFIRM PASSWORD" />
+            <input type="password" class="form-control" id="password2" placeholder="CONFIRM PASSWORD" />
             <br>
-            <input type="text" class="form-control" placeholder="ABOUT YOU" />
+            <input type="text" class="form-control" id="description" placeholder="ABOUT YOU" />
             <br>
-            <input type="text" class="form-control" placeholder="goals" />
+            <input type="text" class="form-control" id="goals" placeholder="GOALS" />
             <br />        
-            <a class="btn btn-primary btn-block" href="sign-in.html">COMPLETE</a>
+            <a class="btn btn-outline-warning btn-block" href="sign-in.html">COMPLETE</a>
         <div>
       </FORM>
       <br />
       <div>      
-        <a class="btn btn-danger btn-block" href="home.html">CANCEL</a>        
+        <a class="btn btn-outline-danger btn-block" href="home.html">CANCEL</a>        
       </div>
     </DIV>
+    <nav class="navbar bg-warning fixed-bottom">
+        <span class="h1 mb-0">WEB MAKER</span>
+      </nav>
   </body>
 </html>
