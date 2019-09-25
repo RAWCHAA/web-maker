@@ -6,58 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="../bootstrap.css" />
-    <link rel="stylesheet" href="style/my.css" />
+    <link rel="stylesheet" href="../style/my.css" />
     <script
       src="https://kit.fontawesome.com/5397a20d41.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav class="navbar bg-warning fixed-top text-light">
-      <a href="websitelist.html"><i class="fas fa-arrow-left"></i></a>
-      <span class="navbar-brand h1 mb-0">NEW WEBSITE</span>
-      <i class="far fa-check-circle text-light"></i>
-    </nav>
-    <br />
-    <br />
-    <br />
-    <br />
-    <div class="container">
-      <form>
-        <h3>ADD NEW WEBSITE</h3>
-        <div class="form-group">
-          <input
-            class="form-control"
-            type="text"
-            name="Name"
-            id="name"
-            placeholder="WEBSITE NAME"
-          />
+    <nav class="navbar bg-warning fixed-top text-light row">
+      <!-- left nav-->
+      <div class="col-lg-3 navbar d-none d-lg-block">
+        <div class="navbar">
+          <a href="websitelist.html" class="light"
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+          <span class="navbar-brand h1 mb-0 ml-4">WEBSITES</span>
+          <i class="fas fa-plus-circle text-light"></i>
         </div>
-        <br />
-        <div class="form-group">
-          <textarea
-            class="form-control"
-            name="DESCRIPTION"
-            id="description"
-            cols="30"
-            rows="15"
-            placeholder="DESCRIPTION OF WEBSITE"
-          ></textarea>
-        </div>
-      </form>
-      <div>
-        <a class="btn btn-outline-warning btn-block" href="websitelist.html"
-          >SUBMIT</a
-        >
       </div>
-      <br />
-      <div>
-        <a class="btn btn-outline-danger btn-block" href="../profile.html"
-          >CANCEL</a
-        >
+      <!--right nav-->
+      <div class="col-lg-9">
+        <div class="navbar">
+          <a href="websitelist.html">
+            <i class="fas fa-arrow-left d-lg-none"></i
+          ></a>
+          <span class="navbar-brand h1 mb-0 ml-4">NEW WEBSITE</span>
+          <i class="far fa-check-circle text-light"></i>
+        </div>
+      </div>
+    </nav>
+    <!--main content-->
+    <div class="row">
+      <div class="col-3 d-none d-lg-block">
+        <br />
+        <br />
+        <br />
+        <div class="container">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="../pages/pagelist.html">Address Book App</a>
+              <a href="" class="float-right"><i class="fas fa-wrench"></i></a>
+              <br />
+              <br />
+            </li>
+            <li class="list-group-item">
+              <a href="../pages/pagelist.html">Blogger</a>
+              <a href="" class="float-right"><i class="fas fa-wrench"></i></a>
+              <br />
+              <br />
+            </li>
+            <li class="list-group-item">
+              <a href="../pages/pagelist.html">Blogging App</a>
+              <a href="" class="float-right"><i class="fas fa-wrench"></i></a>
+              <br />
+              <br />
+            </li>
+            <li class="list-group-item">
+              <a href="../pages/pagelist.html">Script Testing App</a>
+              <a href="" class="float-right"><i class="fas fa-wrench"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="navbar bg-warning fixed-bottom">
+          <span></span>
+          <a class="text-light" href="../profile.html">
+            <i class="fas fa-user-ninja"></i>
+          </a>
+        </nav>
+      </div>
+
+      <div class="col-9">
+        <form class="container">
+          <br />
+          <h3>ADD NEW WEBSITE</h3>
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="text"
+              name="Name"
+              id="name"
+              placeholder="WEBSITE NAME"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              name="DESCRIPTION"
+              id="description"
+              cols="30"
+              rows="15"
+              placeholder="DESCRIPTION OF WEBSITE"
+            ></textarea>
+          </div>
+          <div>
+            <a class="btn btn-outline-warning btn-block" href="websitelist.html"
+              >SUBMIT</a
+            >
+          </div>
+          <br />
+          <div>
+            <a class="btn btn-outline-danger btn-block" href="../profile.html"
+              >CANCEL</a
+            >
+          </div>
+        </form>
       </div>
     </div>
+
     <nav class="navbar bg-danger fixed-bottom">
       <span></span>
       <a class="text-light" href="../profile.html"

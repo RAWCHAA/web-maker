@@ -59,9 +59,8 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  text-align: left
-  ;
-  background-color: #fff;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
 }
 
 [tabindex="-1"]:focus {
@@ -551,11 +550,10 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 40px;
-  padding-left: 40px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 50px;
+  margin: auto;
   line-height: 5px;
+  align-content: center;
 }
 
 @media (min-width: 576px) {
